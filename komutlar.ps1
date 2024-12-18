@@ -5,3 +5,5 @@ Get-Process | Sort-Object CPU -Descending | Select-Object -First 10 #şuan çal�
 Get-ChildItem -Path "HKLM:\SOFTWARE\Microsoft\Cryptography\Providers\Trust\FinalPolicy" -Recurse # registry değerleri çekme
 
 Get-WmiObject -Class Win32_ComputerSystem | Select-Object UserName  # makinede bulunan username
+
+Get-FileHash -Algorithm SHA256 # hash hesaplama
